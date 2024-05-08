@@ -1,17 +1,12 @@
-import React, { Component, Fragment } from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import React, { Fragment } from 'react'
 import AppRoute from './route/AppRoute'
 
-class App extends Component {
-  render() {
+const App = () =>  {
     return (
       <Fragment>
-        <BrowserRouter>
           <AppRoute />
-        </BrowserRouter>
       </Fragment>
     )
-  }
 }
 
 export default App

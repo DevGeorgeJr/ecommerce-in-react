@@ -6,11 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/custom.css';
 import './assets/css/fontawesome.css';
 import './assets/css/animate.min.css';
+import { SSRProvider } from 'react-bootstrap';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <SSRProvider>
+      <App />
+    </SSRProvider>
   </React.StrictMode>
 );
 
