@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CartPage from '../pages/CartPage';
 import ContactPage from '../pages/ContactPage';
 import FavouritePage from '../pages/FavouritePage';
 import HomePage from '../pages/HomePage';
@@ -23,6 +24,7 @@ const AppRoute = () => {
         <Route exact path="/productdetails" element={<ProductDetailsPage />} />
         <Route exact path="/notification" element={<NotificationPage />} />
         <Route exact path="/favourite" element={<FavouritePage />} />
+        <Route exact path="/cart" element={<CartPage />} />
       </Routes>
     </Router>
 
