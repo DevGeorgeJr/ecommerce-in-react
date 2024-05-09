@@ -1,15 +1,15 @@
 import React, { useEffect, Fragment } from 'react'
+import Contact from '../components/common/Contact'
 import FooterDesktop from '../components/common/FooterDesktop'
 import FooterMobile from '../components/common/FooterMobile'
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
-import UserLogin from '../components/common/UserLogin'
 
 
-const UserLoginPage = () => {
-
+const ContactPage = () => {
+    
     useEffect(() => {
-        window.scroll(0, 0)
+        window.scroll(0, 0);
     }, [])
 
     return (
@@ -22,7 +22,7 @@ const UserLoginPage = () => {
                 <NavMenuMobile />
             </div>
 
-            <UserLogin />
+            <Contact />
 
             <div className="Desktop">
                 <FooterDesktop />
@@ -31,8 +31,9 @@ const UserLoginPage = () => {
             <div className="Mobile">
                 <FooterMobile />
             </div>
+
         </Fragment>
     )
 }
 
-export default UserLoginPage
+export default ContactPage
