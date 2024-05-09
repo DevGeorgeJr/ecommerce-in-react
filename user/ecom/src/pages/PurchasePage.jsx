@@ -16,7 +16,6 @@ const PurchasePage = () => {
             <div className="Desktop">
                 <NavMenuDesktop />
             </div>
-
             <div className="Mobile">
                 <NavMenuMobile />
             </div>
@@ -26,7 +25,6 @@ const PurchasePage = () => {
             <div className="Desktop">
                 <FooterDesktop />
             </div>
-
             <div className="Mobile">
                 <FooterMobile />
             </div>

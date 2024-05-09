@@ -29,7 +29,7 @@ const NavMenuMobile = () => {
   return (
     <Fragment>
       <div className="TopSectionDown">
-        <Container fluid={true} className="fixed-top shadow-sm p-2 mb-0 bg-white">
+        <Container fluid={"true"} className="fixed-top shadow-sm p-2 mb-0 bg-white">
           <Row>
             <Col lg={4} md={4} sm={12} xs={12}>
               <Button onClick={MenuBarClickHandler} className="btn"><i className="fa fa-bars"></i></Button>

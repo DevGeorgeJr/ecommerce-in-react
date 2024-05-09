@@ -1,13 +1,11 @@
-import React, { useEffect, Fragment } from 'react'
+import React, { Component, Fragment, useEffect } from 'react'
+import Favourite from '../components/Favourite/Favourite'
 import FooterDesktop from '../components/common/FooterDesktop'
 import FooterMobile from '../components/common/FooterMobile'
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
-import ProductDetails from '../components/ProductDetails/ProductDetails'
-import SuggestedProduct from '../components/ProductDetails/SuggestedProduct'
 
-const ProductDetailsPage = () => {
-
+const FavouritePage = () => {
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
@@ -21,8 +19,7 @@ const ProductDetailsPage = () => {
                 <NavMenuMobile />
             </div>
 
-            <ProductDetails />
-            <SuggestedProduct/>
+            <Favourite />
 
             <div className="Desktop">
                 <FooterDesktop />
@@ -35,4 +32,4 @@ const ProductDetailsPage = () => {
     )
 }
 
-export default ProductDetailsPage
+export default FavouritePage

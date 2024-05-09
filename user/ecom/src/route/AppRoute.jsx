@@ -1,7 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactPage from '../pages/ContactPage';
+import FavouritePage from '../pages/FavouritePage';
 import HomePage from '../pages/HomePage';
+import NotificationPage from '../pages/NotificationPage';
 import ProductDetailsPage from '../pages/ProductDetailsPage';
 import PrivacyPage from '../pages/PrivacyPage';
 import PurchasePage from '../pages/PurchasePage';
@@ -19,6 +21,8 @@ const AppRoute = () => {
         <Route exact path="/privacy" element={<PrivacyPage />} />
         <Route exact path="/refund" element={<RefundPage />} />
         <Route exact path="/productdetails" element={<ProductDetailsPage />} />
+        <Route exact path="/notification" element={<NotificationPage />} />
+        <Route exact path="/favourite" element={<FavouritePage />} />
       </Routes>
     </Router>
 

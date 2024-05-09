@@ -17,7 +17,6 @@ const UserLoginPage = () => {
             <div className="Desktop">
                 <NavMenuDesktop />
             </div>
-
             <div className="Mobile">
                 <NavMenuMobile />
             </div>
@@ -27,7 +26,6 @@ const UserLoginPage = () => {
             <div className="Desktop">
                 <FooterDesktop />
             </div>
-
             <div className="Mobile">
                 <FooterMobile />
             </div>
