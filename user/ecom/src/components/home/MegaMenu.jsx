@@ -21,7 +21,9 @@ const MegaMenu = () => {
 
         return () => {
             for (let i = 0; i < accNum; i++) {
-                acc[i].removeEventListener("click", toggleAccordion);
+                if (acc[i]) {
+                    acc[i].removeEventListener("click", toggleAccordion);
+                }
             }
         };
     }, []);

@@ -1,18 +1,13 @@
 import React, { Component, Fragment } from 'react'
-import { Container, Row, Col, Card } from 'react-bootstrap'
-import MegaMenu from './MegaMenu'
 import HomeSlider from './HomeSlider'
+import { Container, Row, Col } from 'react-bootstrap'
 
-const HomeTop = () => {
+const HomeTopMobile = () => {
     return (
         <Fragment>
             <Container className="p-0 m-0 overflow-hidden" fluid={true}>
-                <Row>
-                    <Col lg={3} md={3} sm={12}>
-                        <MegaMenu />
-                    </Col>
-
-                    <Col lg={9} md={9} sm={12}>
+                <Row className="p-0 m-0 overflow-hidden">
+                    <Col lg={12} md={12} sm={12}>
                         <HomeSlider />
                     </Col>
                 </Row>
@@ -21,4 +16,4 @@ const HomeTop = () => {
     )
 }
 
-export default HomeTop
+export default HomeTopMobile
